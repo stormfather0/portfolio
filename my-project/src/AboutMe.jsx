@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="w-full relative text-white py-20 px-6 md:px-12 lg:px-20"
+      className="w-full relative text-white py-20 px-6 md:px-12 lg:px-20 "
     >
       {/* Background image */}
       <div
@@ -16,7 +16,7 @@ const AboutMe = () => {
 
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Profile image */}
-        <div className="w-40 h-40 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden shadow-lg">
+        <div className="w-40 h-40 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden shadow-lg mt-45 md:mt-0">
           <img
             src={photoProfile}
             alt="Ivan Yatskovyna"
