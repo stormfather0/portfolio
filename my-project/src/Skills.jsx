@@ -61,13 +61,16 @@ const Skills = () => {
         </div>
 
         {/* Other Frontend Skills */}
-     <div className="mt-20">
+   {/* Other Frontend Skills */}
+{/* Other Frontend Skills */}
+<div className="mt-20 flex flex-col items-center">
   <h2 className="text-3xl font-bold text-center mb-8">Other Frontend Skills</h2>
-  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+
+  <div className="flex flex-wrap justify-center gap-6">
     {otherSkills.map((skill, idx) => (
       <div
         key={idx}
-        className="flex flex-col items-center justify-center rounded-2xl p-4 bg-white/10 w-full h-40 hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
+        className="flex flex-col items-center justify-center rounded-2xl p-4 bg-white/10 w-40 h-40 hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
       >
         {/* Circular container */}
         <div className="flex items-center justify-center w-20 h-20 mb-3 rounded-full bg-white/20 overflow-hidden p-2">
