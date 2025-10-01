@@ -62,6 +62,8 @@ const Header = () => {
           <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
           <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
           <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
+          <a href="#letter" className="hover:text-blue-400 transition-colors">Letter</a>
+
           <a
             href="#contact"
             className="mt-2 inline-block bg-white text-black font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-gray-100 hover:shadow-lg transition-all duration-200"

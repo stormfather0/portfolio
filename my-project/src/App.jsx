@@ -33,7 +33,11 @@ function App() {
      <SectionDivider colors={["#000000", "#ffffff", "#9ca3af"]} className="my-10" />
 
      <Landings />
-     <SectionDivider colors={["#ef4444", "#facc15"]} className="my-10" />
+     <SectionDivider
+colors={["#fbbf24", "#ff0000", "#facc15"]}
+  className="my-15"
+
+/>
      <Projects />
      <SectionDivider className="my-10" />
      <Letter />

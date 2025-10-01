@@ -39,7 +39,7 @@ const Skills = () => {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col">
+      <div className="relative z-10 flex flex-col mt-10">
 
         {/* Main Skills */}
         <h2 className="text-4xl font-bold text-center mb-12">My Skills</h2>
