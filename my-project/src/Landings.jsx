@@ -32,7 +32,7 @@ const Landings = () => {
   return (
     <div className="flex flex-col items-center justify-center px-4 md:ml-20 lg:ml-30 mb-10 mt-10">
       <p className="text-white text-5xl text-center mb-10">
-        Landings pages designed for small projects
+      Selected landing pages and apps
       </p>
 
       <div
