@@ -30,8 +30,12 @@ const Landings = () => {
   };
 
   return (
-    
-    <div className="flex flex-col items-center justify-center px-4 md:ml-20 lg:ml-30 mb-10 mt-10">
+  
+<div
+  id="projects"
+  className="flex flex-col items-center justify-center px-4 md:ml-20 lg:ml-30 mb-10 mt-10 scroll-mt-30"
+>
+        
       <p className="text-white text-5xl text-center mb-10">
       Selected landing pages and apps
       </p>
@@ -77,6 +81,7 @@ const Landings = () => {
         </button>
       </div>
     </div>
+   
   );
 };
 

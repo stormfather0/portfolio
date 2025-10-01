@@ -43,7 +43,7 @@ const techLogos = {
 const Projects = () => {
   return (
     <section
-      id="projects"
+  
       className="relative flex flex-col w-full text-white  px-4 sm:px-6 md:px-10 lg:px-20 min-h-[1800px] sm:min-h-[calc(100vh+150px)] md:min-h-[calc(100vh+400px)] overflow-hidden"
     >
       {/* Background */}
