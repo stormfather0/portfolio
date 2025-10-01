@@ -63,17 +63,18 @@ const Skills = () => {
      
 {/* Other Frontend Skills */}
 {/* Other Frontend Skills */}
+{/* Other Frontend Skills */}
 <div className="mt-20 flex flex-col items-center">
   <h2 className="text-3xl font-bold text-center mb-8">Other Frontend Skills</h2>
 
-  <div className="flex flex-wrap justify-center gap-6">
+  <div className="flex flex-wrap justify-center gap-6 max-w-[960px] mx-auto">
     {otherSkills.map((skill, idx) => (
       <div
         key={idx}
-        className="flex flex-col items-center justify-start rounded-2xl p-6 bg-white/10 w-48 h-52 hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
+        className="flex flex-col items-center justify-start rounded-2xl p-6 bg-white/10 w-[45%] sm:w-[30%] md:w-[22%] lg:w-48 h-52 hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
       >
-        {/* Circular container for icon with slightly reduced padding */}
-        <div className="flex items-center justify-center w-28 h-28 mb-4 rounded-full bg-white/20 p-2">
+        {/* Circular container for icon */}
+        <div className="flex items-center justify-center w-28 h-28 mb-2 rounded-full bg-white/20 p-2">
           <img
             src={skill.icon}
             alt={skill.name}
