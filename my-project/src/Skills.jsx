@@ -72,7 +72,7 @@ const Skills = () => {
                 <div className="flex items-center justify-center w-16 h-16 mb-3 rounded-full bg-white/20">
                   <img src={skill.icon} alt={skill.name} className="w-10 h-10 object-contain" />
                 </div>
-                <span className="text-md font-semibold">{skill.name}</span>
+                <span className="text-md font-semibold text-center">{skill.name}</span>
                 <p className="mt-1 text-gray-300 text-xs text-center">
                   Lorem ipsum
                 </p>
