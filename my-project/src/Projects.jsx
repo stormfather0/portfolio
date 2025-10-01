@@ -1,6 +1,6 @@
 
 import React from "react";
-import projectImg1 from "./assets/project1.jpg";
+import projectImg1 from "./assets/rozetka-project-2.jpg";
 import projectImg2 from "./assets/project2.jpg";
 import projectImg3 from "./assets/project3.jpg";
 import bgProjects from "./assets/background-projects.jpg";
@@ -10,8 +10,8 @@ import tailwindLogo from "./assets/tailwind.svg";
 const projects = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "A personal portfolio built with React and Tailwind CSS.",
+    title: "Rozetka-Inspired E-commerce Platform",
+    description: "Developed a marketplace app inspired by Rozetka, featuring product browsing, search, and API integration for dynamic data.",
     image: projectImg1,
     link: "#",
     technologies: ["React", "Tailwind CSS"],
@@ -63,7 +63,7 @@ const Projects = () => {
       {/* Section Header */}
       <div className="max-w-5xl mx-auto text-center mb-12 px-4 sm:px-8 md:px-12 ">
       <p className="text-white text-5xl text-center mb-10">
-     A selection of my projects
+      Marketplace Apps with API calls 
       </p>
       </div>
 
@@ -77,14 +77,14 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="group flex flex-col md:flex-row rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-gray-800/50 backdrop-blur-sm"
           >
-            {/* Project Image */}
-            <div className="overflow-hidden md:w-1/3 h-60 sm:h-64 md:h-auto">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover transform transition-transform duration-500 ease-in-out group-hover:scale-105"
-              />
-            </div>
+        {/* Project Image */}
+        <div className="rounded-2xl overflow-hidden w-full md:w-1/3">
+  <img
+    src={project.image}
+    alt={project.title}
+    className="w-full h-48 sm:h-56 md:h-64 lg:h-auto object-cover object-top-left"
+  />
+</div>
 
             {/* Content */}
             <div className="flex-1 p-4 sm:p-6 md:p-8 flex flex-col justify-center">

@@ -17,8 +17,12 @@ const Letter = () => {
       <div className="absolute inset-0 -z-5 bg-black/30" />
 
       <div className="max-w-4xl mx-auto relative z-10">
+   
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 px-2 leading-snug text-center md:text-left">
+  A few more words
+</h2>
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 p-2 leading-tight text-center md:text-left">
-          Hello,{' '}
+         {' '}
           <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 bg-clip-text text-transparent">
             I'm Ivan
           </span>{' '}
@@ -28,7 +32,7 @@ const Letter = () => {
           </span>{' '}
           dedicated to building engaging and efficient web experiences
         </h1>
-
+     
         <p className="text-gray-300 mb-6 px-4 sm:mb-8 leading-relaxed text-base sm:text-lg md:text-xl text-justify md:text-left">
           I specialize in creating modern, responsive, and user-friendly web applications. With a strong focus on clean code and performance, I strive to deliver high-quality solutions that not only look great but also function seamlessly.
         </p>
