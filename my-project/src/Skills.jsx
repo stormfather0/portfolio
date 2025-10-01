@@ -25,7 +25,7 @@ const otherSkills = [
   { name: 'Responsive Design', icon: htmlLogo },
   { name: 'Git / GitHub', icon: jsLogo },
   { name: 'Testing', icon: cssLogo },
-  { name: 'Performance Optimization', icon: tailwindLogo },
+
 ];
 
 const Skills = () => {
@@ -61,25 +61,30 @@ const Skills = () => {
         </div>
 
         {/* Other Frontend Skills */}
-        <div className="mt-20">
-          <h2 className="text-3xl font-bold text-center mb-8">Other Frontend Skills</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            {otherSkills.map((skill, idx) => (
-              <div
-                key={idx}
-                className="flex flex-col items-center justify-center rounded-2xl p-4 bg-white/10 w-full h-36 hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
-              >
-                <div className="flex items-center justify-center w-16 h-16 mb-3 rounded-full bg-white/20">
-                  <img src={skill.icon} alt={skill.name} className="w-10 h-10 object-contain" />
-                </div>
-                <span className="text-md font-semibold text-center">{skill.name}</span>
-                <p className="mt-1 text-gray-300 text-xs text-center">
-                  Lorem ipsum
-                </p>
-              </div>
-            ))}
-          </div>
+     <div className="mt-20">
+  <h2 className="text-3xl font-bold text-center mb-8">Other Frontend Skills</h2>
+  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+    {otherSkills.map((skill, idx) => (
+      <div
+        key={idx}
+        className="flex flex-col items-center justify-center rounded-2xl p-4 bg-white/10 w-full h-40 hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
+      >
+        {/* Circular container */}
+        <div className="flex items-center justify-center w-20 h-20 mb-3 rounded-full bg-white/20 overflow-hidden p-2">
+          <img
+            src={skill.icon}
+            alt={skill.name}
+            className="w-full h-full object-contain"
+          />
         </div>
+        <span className="text-md font-semibold text-center">{skill.name}</span>
+        <p className="mt-1 text-gray-300 text-xs text-center">
+          Lorem ipsum
+        </p>
+      </div>
+    ))}
+  </div>
+</div>
 
       </div>
     </section>

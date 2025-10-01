@@ -31,7 +31,7 @@ const Header = () => {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden flex flex-col justify-center items-center w-8 h-8 relative ml-auto"
+          className="md:hidden flex flex-col justify-center items-center w-8 h-8 relative ml-auto cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
           <span

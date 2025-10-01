@@ -69,13 +69,13 @@ const Landings = () => {
       <div className="flex justify-end gap-2 w-full pr-10">
         <button
           onClick={scrollLeft}
-          className="bg-white text-black px-3 py-2 rounded-full shadow-md hover:bg-gray-200 transition"
+          className="bg-white text-black px-3 py-2 rounded-full shadow-md hover:bg-gray-200 transition cursor-pointer"
         >
           ←
         </button>
         <button
           onClick={scrollRight}
-          className="bg-white text-black px-3 py-2 rounded-full shadow-md hover:bg-gray-200 transition"
+          className="bg-white text-black px-3 py-2 rounded-full shadow-md hover:bg-gray-200 transition cursor-pointer"
         >
           →
         </button>
