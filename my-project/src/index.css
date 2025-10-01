@@ -5,6 +5,7 @@
 @import "~slick-carousel/slick/slick-theme.css"; */
 
 
+
 body {
   background-color: #0B0B0B;
 }
@@ -16,15 +17,46 @@ html, body {
 }
 
 main {
-  scroll-snap-type: y mandatory; /* vertical snapping */
-  overflow-y: scroll;
-  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;  /* not fixed height */
 }
 
 section {
   scroll-snap-align: start; /* each section aligns at top */
-  height: 100vh; /* full viewport height */
+
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+/* Chrome, Safari, Edge */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+  scroll-behavior: smooth;   
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  gap: 24px; /* consistent spacing */
+  scroll-padding-left: 30px; /* first card offset */
+}
+
+.hide-scrollbar li {
+  scroll-snap-align: start;
+  flex-shrink: 0;
 }

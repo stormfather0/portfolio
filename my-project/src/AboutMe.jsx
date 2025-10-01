@@ -1,28 +1,29 @@
 import React from 'react';
 import photoProfile from './assets/profile.jpeg';
 import bgCoding from './assets/background-coding.jpg';
+import arrowDown from './assets/arrow-down.svg';
 
 const AboutMe = () => {
   return (
     <section
-      id="about"
-      className="w-full relative text-white py-20 px-6 md:px-12 lg:px-20 "
-    >
-      {/* Background image */}
-      <div
-        className="absolute inset-0 -z-10 bg-cover bg-center filter blur-sm opacity-40"
-        style={{ backgroundImage: `url(${bgCoding})` }}
-      />
-
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        {/* Profile image */}
-        <div className="w-40 h-40 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden shadow-lg mt-45 md:mt-0">
-          <img
-            src={photoProfile}
-            alt="Ivan Yatskovyna"
-            className="w-full h-full object-cover"
-          />
-        </div>
+    id="about"
+    className="w-full relative text-white min-h-screen flex items-center py-20 px-6 md:px-12 lg:px-20"
+  >
+    {/* Background image */}
+    <div
+      className="absolute inset-0 -z-10 bg-cover bg-center filter blur-sm opacity-40"
+      style={{ backgroundImage: `url(${bgCoding})` }}
+    />
+  
+    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 w-full">
+      {/* Profile image */}
+      <div className="w-40 h-40 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden shadow-lg mt-12 md:mt-0">
+        <img
+          src={photoProfile}
+          alt="Ivan Yatskovyna"
+          className="w-full h-full object-cover"
+        />
+      </div>
 
         {/* Text content */}
         <div className="flex-1 text-center md:text-left bg-transparent backdrop-blur-sm rounded-2xl p-8 md:p-10">
@@ -98,7 +99,16 @@ const AboutMe = () => {
             </a>
           </div>
         </div>
+        
       </div>
+
+      <a
+  href="#skills"
+  className="hidden md:flex absolute bottom-5 left-1/2 transform -translate-x-1/2 items-center space-x-2 text-sm font-bold text-center text-white cursor-pointer"
+>
+  <span>Skills</span>
+  <img src={arrowDown} alt="Arrow down" className="w-4 h-4 animate-pulse" />
+</a>
     </section>
   );
 };

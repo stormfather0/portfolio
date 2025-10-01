@@ -4,7 +4,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-4 left-1/2 z-50 transform -translate-x-1/2 w-[95%] bg-transparent backdrop-blur-sm rounded-2xl">
+    <header className="fixed top-4 left-1/2 z-50 transform -translate-x-1/2 w-[95%] bg-transparent backdrop-blur-sm rounded-2xl border border-white/20">
       <div className="max-w-6xl mx-auto flex items-center justify-between p-4">
         {/* Optional Logo */}
         <div className="text-gray-300 font-bold text-xl">
@@ -17,6 +17,8 @@ const Header = () => {
             <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
             <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
             <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
+            <a href="#letter" className="hover:text-blue-400 transition-colors">Letter</a>
+
           </nav>
 
           <a

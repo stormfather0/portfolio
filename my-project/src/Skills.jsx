@@ -1,0 +1,89 @@
+import React from 'react';
+import skillsBg from './assets/skills-background-3.jpg';
+import reactLogo from './assets/react-logo-1.svg';
+import jsLogo from './assets/js.png';
+import htmlLogo from './assets/html.png';
+import cssLogo from './assets/css-logo.svg';
+import tailwindLogo from './assets/tailwind.svg';
+import scssLogo from './assets/scss.svg';
+import tsLogo from './assets/TS.avif';
+import gitHubLogo from './assets/github.svg';
+
+const skills = [
+  { name: 'React', icon: reactLogo },
+  { name: 'JavaScript', icon: jsLogo },
+  { name: 'HTML', icon: htmlLogo },
+  { name: 'CSS', icon: cssLogo },
+  { name: 'SCSS', icon: scssLogo },
+  { name: 'Tailwind', icon: tailwindLogo },
+  { name: 'TypeScript', icon: tsLogo },
+  { name: 'Git', icon: gitHubLogo },
+];
+
+const otherSkills = [
+  { name: 'API Calls', icon: jsLogo },
+  { name: 'Responsive Design', icon: htmlLogo },
+  { name: 'Git / GitHub', icon: jsLogo },
+  { name: 'Testing', icon: cssLogo },
+  { name: 'Performance Optimization', icon: tailwindLogo },
+];
+
+const Skills = () => {
+  return (
+    <section id="skills" className="relative w-full flex flex-col text-white py-20 px-6 sm:px-12 lg:px-20">
+
+      {/* Blurred Background */}
+      <div
+        className="absolute inset-0 -z-10 bg-cover bg-center filter blur-sm opacity-60"
+        style={{ backgroundImage: `url(${skillsBg})` }}
+      />
+
+      {/* Content */}
+      <div className="relative z-10 flex flex-col">
+
+        {/* Main Skills */}
+        <h2 className="text-4xl font-bold text-center mb-12">My Skills</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-8">
+          {skills.map((skill, idx) => (
+            <div
+              key={idx}
+              className="flex flex-col items-center justify-center rounded-3xl p-6 bg-gray-800/30 shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 cursor-pointer"
+            >
+              <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-gray-700/40">
+                <img src={skill.icon} alt={skill.name} className="w-12 h-12 object-contain" />
+              </div>
+              <span className="text-lg font-semibold">{skill.name}</span>
+              <p className="mt-2 text-gray-300 text-sm text-center">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Other Frontend Skills */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold text-center mb-8">Other Frontend Skills</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+            {otherSkills.map((skill, idx) => (
+              <div
+                key={idx}
+                className="flex flex-col items-center justify-center rounded-2xl p-4 bg-white/10 w-full h-36 hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"
+              >
+                <div className="flex items-center justify-center w-16 h-16 mb-3 rounded-full bg-white/20">
+                  <img src={skill.icon} alt={skill.name} className="w-10 h-10 object-contain" />
+                </div>
+                <span className="text-md font-semibold">{skill.name}</span>
+                <p className="mt-1 text-gray-300 text-xs text-center">
+                  Lorem ipsum
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default Skills;

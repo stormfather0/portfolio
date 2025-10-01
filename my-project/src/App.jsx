@@ -8,10 +8,15 @@ import Projects from './Projects'
 import bgCoding from './assets/background-coding.jpg';
 // import Slider from './Slider';
 import SectionDivider from "./SectionDivider";
-import Technologies from "./Technologies";
+// import Technologies from "./Technologies";
+import Footer from "./Footer";
+import Landings from './Landings'
+import Skills from './Skills';
+import Letter   from './Letter';
+// import SkillsSection from './SkillsSection';
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     
@@ -24,10 +29,15 @@ function App() {
      <Header />
      <AboutMe />
      <SectionDivider className="my-10" />
+     <Skills />
+     <SectionDivider colors={["#000000", "#ffffff", "#9ca3af"]} className="my-10" />
+
+     <Landings />
+     <SectionDivider colors={["#ef4444", "#facc15"]} className="my-10" />
      <Projects />
-     {/* <Slider /> */}
      <SectionDivider className="my-10" />
-     <Technologies />
+     <Letter />
+     <Footer />
     </div>
   )
 }
