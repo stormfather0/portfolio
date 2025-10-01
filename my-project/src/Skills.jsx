@@ -85,9 +85,7 @@ const Skills = () => {
         {/* Fixed height container for text */}
         <div className="flex flex-col items-center justify-center h-20">
           <span className="text-md font-semibold text-center">{skill.name}</span>
-          <p className="mt-1 text-gray-300 text-xs text-center">
-            Lorem ipsum
-          </p>
+        
         </div>
       </div>
     ))}
