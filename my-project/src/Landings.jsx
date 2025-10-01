@@ -45,7 +45,7 @@ const Landings = () => {
   const scrollRight = () => smoothScroll(300);
 
   return (
-    <div className="flex flex-col items-center justify-center px-4 ml-30 mb-10 mt-30">
+<div className="flex flex-col items-center justify-center px-4 md:ml-20 lg:ml-30 mb-10 mt-10">
       <p className="text-white text-5xl text-center mb-10">
         Landings pages designed for small projects
       </p>
