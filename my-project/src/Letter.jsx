@@ -4,25 +4,26 @@ import bgImage from './assets/letter-background.jpg';
 const Letter = () => {
   return (
     <section
-      className="relative w-full text-white min-h-[120vh] py-20 px-10 sm:px-6 md:px-10 lg:px-20 overflow-hidden"
       id="letter"
+      className="relative w-full text-white min-h-[120vh] py-20 px-10 sm:px-6 md:px-10 lg:px-20 overflow-hidden"
     >
-      {/* Background image with blur */}
-      <div
-        className="absolute inset-0 -z-10 w-full h-full bg-cover bg-center filter blur-sm opacity-50"
-        style={{ backgroundImage: `url(${bgImage})` }}
-      />
+      {/* Blurred Background */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div
+          className="absolute -inset-1 w-[101%] h-[101%] bg-cover bg-center filter blur-sm opacity-50"
+          style={{ backgroundImage: `url(${bgImage})` }}
+        />
+      </div>
 
-      {/* Overlay for better readability */}
+      {/* Overlay for readability */}
       <div className="absolute inset-0 -z-5 bg-black/30" />
 
+      {/* Content */}
       <div className="max-w-4xl mx-auto relative z-10">
-   
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 px-2 leading-snug text-center md:text-left">
-  A few more words
-</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 px-2 leading-snug text-center md:text-left">
+          A few more words
+        </h2>
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 p-2 leading-tight text-center md:text-left">
-         {' '}
           <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 bg-clip-text text-transparent">
             I'm Ivan
           </span>{' '}
@@ -32,7 +33,7 @@ const Letter = () => {
           </span>{' '}
           dedicated to building engaging and efficient web experiences
         </h1>
-     
+
         <p className="text-gray-300 mb-6 px-4 sm:mb-8 leading-relaxed text-base sm:text-lg md:text-xl text-justify md:text-left">
           I specialize in creating modern, responsive, and user-friendly web applications. With a strong focus on clean code and performance, I strive to deliver high-quality solutions that not only look great but also function seamlessly.
         </p>
@@ -44,12 +45,12 @@ const Letter = () => {
         <div className="flex flex-col justify-center items-center gap-4 bg-gray-900/70 backdrop-blur-sm rounded-2xl p-8">
           <p className="text-lg font-medium">Let's create something amazing together!</p>
           <a
-  href="./assets/background-coding.jpg"   
-  download
-  className="bg-white text-black font-semibold px-6 py-2 rounded-2xl shadow-md hover:bg-gray-100 hover:shadow-lg transition-all duration-200 cursor-pointer inline-block"
->
-  Download Resume
-</a>
+            href="./assets/background-coding.jpg"   
+            download
+            className="bg-white text-black font-semibold px-6 py-2 rounded-2xl shadow-md hover:bg-gray-100 hover:shadow-lg transition-all duration-200 cursor-pointer inline-block"
+          >
+            Download Resume
+          </a>
         </div>
       </div>
     </section>
