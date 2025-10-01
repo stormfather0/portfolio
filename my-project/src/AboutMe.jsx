@@ -104,7 +104,7 @@ const AboutMe = () => {
 
       <a
   href="#skills"
-  className="hidden md:flex absolute bottom-5 left-1/2 transform -translate-x-1/2 items-center space-x-2 text-sm font-bold text-center text-white cursor-pointer"
+  className="hidden md:flex absolute bottom-5 left-1/2 transform -translate-x-1/2 items-center space-x-2 text-sm font-bold text-center text-white cursor-pointer animate-pulse"
 >
   <span>Skills</span>
   <img src={arrowDown} alt="Arrow down" className="w-4 h-4 animate-pulse" />

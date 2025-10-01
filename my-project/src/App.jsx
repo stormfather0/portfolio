@@ -30,7 +30,7 @@ function App() {
      <AboutMe />
      <SectionDivider className="my-10" />
      <Skills />
-     <SectionDivider colors={["#000000", "#ffffff", "#9ca3af"]} className="my-10" />
+     <SectionDivider colors={["#000000", "#ffffff", "#9ca3af"]} className="mt-10" />
 
      <Landings />
      <SectionDivider

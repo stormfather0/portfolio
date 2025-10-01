@@ -3,11 +3,11 @@ import NetflixImg from './assets/netflix.jpg';
 import './index.css';
 
 const Landings = () => {
-  const colors = ["bg-white", "bg-blue-100", "bg-green-100", "bg-purple-100"];
+  const colors = ["bg-red-100", "bg-blue-100", "bg-red-100", "bg-blue-100"];
 
   const cards = [
     { id: 1, title: "Netflix", desc: "Popular movies and TV shows.", img: NetflixImg, link: "https://stormfather0.github.io/my-netflix-app/" },
-    { id: 2, title: "Fitness Tracking", desc: "Keep an eye on your progress every day.", img: NetflixImg },
+    { id: 2, title: "Traveling App", desc: "Keep an eye on your progress every day.", img: NetflixImg },
     { id: 3, title: "Yoga Assistant", desc: "Improve flexibility with guided yoga.", img: NetflixImg },
     { id: 4, title: "Yoga Assistant", desc: "Improve flexibility with guided yoga.", img: NetflixImg },
   ];
@@ -30,6 +30,7 @@ const Landings = () => {
   };
 
   return (
+    
     <div className="flex flex-col items-center justify-center px-4 md:ml-20 lg:ml-30 mb-10 mt-10">
       <p className="text-white text-5xl text-center mb-10">
       Selected landing pages and apps
