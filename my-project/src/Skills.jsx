@@ -9,6 +9,7 @@ import scssLogo from './assets/scss.svg';
 import tsLogo from './assets/TS.avif';
 import gitHubLogo from './assets/github.svg';
 
+
 const skills = [
   { name: 'React', icon: reactLogo },
   { name: 'JavaScript', icon: jsLogo },
@@ -61,8 +62,8 @@ const Skills = () => {
         </div>
 
      
-{/* Other Frontend Skills */}
-{/* Other Frontend Skills */}
+
+
 {/* Other Frontend Skills */}
 <div className="mt-20 flex flex-col items-center">
   <h2 className="text-3xl font-bold text-center mb-8">Other Frontend Skills</h2>
@@ -92,6 +93,10 @@ const Skills = () => {
   </div>
 </div>
 
+<div className="bg-white/20 flex justify-center items-center m-0 mt-5 p-2 w-[88%] rounded-md mx-auto   ">
+
+  <p className="text-md px-2 py-1 font-semibold">English - Advanced C1 </p>
+</div>
       </div>
     </section>
   );
