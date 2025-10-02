@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import telegramImg from "./assets/telegram.png";
+import telegramImg from "./assets/social-svg-icons/telegram-icon.svg";
 import emailImg from "./assets/email.png";
-import viberImg from "./assets/viber-1.webp";
-import whatsappImg from "./assets/whatsapp.png";
+import viberImg from "./assets/social-svg-icons/viber-icon.svg";
+
+import whatsappImg from "./assets/social-svg-icons/whatsapp-icon.svg";
 import dowloadIcon from "./assets/download.svg";
 import phoneIcon from "./assets/phone-icon.png";
 
@@ -39,8 +40,10 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
 
       {/* Popup */}
       <div
-  className="relative bg-gray-300/40 backdrop-blur-md rounded-2xl shadow-2xl w-full max-w-3xl
-             p-6 sm:overflow-hidden overflow-auto max-h-[90vh]"
+  className="relative rounded-2xl shadow-2xl w-full max-w-3xl
+             p-6 sm:overflow-hidden overflow-auto max-h-[90vh]
+             bg-gradient-to-br from-indigo-500/30 via-purple-500/20 to-pink-500/30
+             backdrop-blur-lg border border-white/20 animate-gradient"
 >
         {/* Close Button */}
         <button
@@ -55,7 +58,7 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
         <p className="text-white text-center mb-6">I'd love to hear from you — feel free to reach out!</p>
 
         {/* Phone Section */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 bg-blue-50/80 rounded-2xl p-4 sm:p-6 mb-6">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4  backdrop-blur-lg bg-blue-50/70 rounded-2xl p-4 sm:p-6 mb-6">
           <img src={phoneIcon} alt="Phone" className="w-12 h-12" />
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
             <p className="text-lg font-semibold text-gray-800">+380 99 999 9999</p>
@@ -66,7 +69,7 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
         {/* Contact Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {/* Messaging Apps */}
-          <div className="flex flex-col bg-blue-50/80 rounded-2xl p-6 shadow-md hover:shadow-lg transition gap-2">
+          <div className="flex flex-col bg-blue-50/70 rounded-2xl p-6 shadow-md hover:shadow-lg transition gap-2">
   {icons.map((icon, i) => (
     <React.Fragment key={i}>
       <button
@@ -74,9 +77,7 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
         className="flex items-center w-full p-3 gap-4 cursor-pointer hover:bg-white/30 transition rounded-xl"
       >
         <div
-          className={`flex-shrink-0 w-16 h-16 flex items-center justify-center bg-white/10 rounded-full ${
-            icon.alt === "Viber" ? "scale-90" : ""
-          }`}
+          className={`flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/10 rounded-full }`}
         >
           <img src={icon.src} alt={icon.alt} className="max-w-full max-h-full object-contain" />
         </div>
@@ -96,7 +97,7 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
 </div>
 
           {/* Email */}
-          <div className="flex flex-col justify-center items-center bg-blue-50/80 rounded-2xl p-6 shadow-md hover:shadow-lg transition gap-4">
+          <div className="flex flex-col justify-center items-center bg-blue-50/70 rounded-2xl p-6 shadow-md hover:shadow-lg transition gap-4">
             <button
               onClick={() => handleClick("mailto:XqIeI@example.com")}
               className="flex items-center justify-center w-20 h-20 rounded-xl mb-4 transition transform hover:scale-105 bg-white/20"
