@@ -38,8 +38,10 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Popup */}
-      <div className="relative bg-gray-300/40 backdrop-blur-md rounded-2xl shadow-2xl w-full max-w-3xl
-                      p-6 overflow-hidden sm:overflow-auto sm:max-h-[90vh]">
+      <div
+  className="relative bg-gray-300/40 backdrop-blur-md rounded-2xl shadow-2xl w-full max-w-3xl
+             p-6 sm:overflow-hidden overflow-auto max-h-[90vh]"
+>
         {/* Close Button */}
         <button
           className="absolute top-4 right-4 w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition font-bold text-xl cursor-pointer"
@@ -65,23 +67,33 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {/* Messaging Apps */}
           <div className="flex flex-col bg-blue-50/80 rounded-2xl p-6 shadow-md hover:shadow-lg transition gap-2">
-            {icons.map((icon, i) => (
-              <button
-                key={i}
-                onClick={() => handleClick(icon.link)}
-                className="flex items-center w-full p-3 gap-4 cursor-pointer hover:bg-white/30 transition rounded-xl"
-              >
-                <div className={`flex-shrink-0 w-16 h-16 flex items-center justify-center bg-white/10 rounded-full
-                                ${icon.alt === "Viber" ? "scale-90" : ""}`}>
-                  <img src={icon.src} alt={icon.alt} className="max-w-full max-h-full object-contain" />
-                </div>
-                <div className="flex flex-col items-start">
-                  <p className="text-gray-800 font-semibold text-lg">+380 99 999 9999</p>
-                  <p className="text-gray-500 text-sm">Click to chat</p>
-                </div>
-              </button>
-            ))}
-          </div>
+  {icons.map((icon, i) => (
+    <React.Fragment key={i}>
+      <button
+        onClick={() => handleClick(icon.link)}
+        className="flex items-center w-full p-3 gap-4 cursor-pointer hover:bg-white/30 transition rounded-xl"
+      >
+        <div
+          className={`flex-shrink-0 w-16 h-16 flex items-center justify-center bg-white/10 rounded-full ${
+            icon.alt === "Viber" ? "scale-90" : ""
+          }`}
+        >
+          <img src={icon.src} alt={icon.alt} className="max-w-full max-h-full object-contain" />
+        </div>
+
+        <div className="flex flex-col items-start">
+          <p className="text-gray-800 font-semibold text-lg">+380 99 999 9999</p>
+          <p className="text-gray-500 text-sm">Click to chat</p>
+        </div>
+      </button>
+
+      {/* Divider goes OUTSIDE the button */}
+      {i < icons.length - 1 && (
+  <div className="h-[1px] w-full bg-gradient-to-r from-blue-300  to-violet-300 my-1"></div>
+)}
+    </React.Fragment>
+  ))}
+</div>
 
           {/* Email */}
           <div className="flex flex-col justify-center items-center bg-blue-50/80 rounded-2xl p-6 shadow-md hover:shadow-lg transition gap-4">
