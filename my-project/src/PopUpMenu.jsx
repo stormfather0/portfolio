@@ -36,7 +36,7 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/70" onClick={() => {setContactMenuOpen(false)}}></div>
 
       {/* Popup */}
       <div

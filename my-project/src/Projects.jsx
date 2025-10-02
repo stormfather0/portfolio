@@ -6,6 +6,9 @@ import projectImg3 from "./assets/project3.jpg";
 import bgProjects from "./assets/background-projects.jpg";
 import reactLogo from "./assets/react.svg";
 import tailwindLogo from "./assets/tailwind.svg";
+import jsLogo from "./assets/js.png";
+import cssLogo from "./assets/css-logo.svg";
+
 
 const projects = [
   {
@@ -18,26 +21,27 @@ const projects = [
   },
   {
     id: 2,
-    title: "E-commerce App",
-    description:
-      "A fully functional e-commerce application with cart and checkout features.",
-    image: projectImg2,
+    title: "Rozetka-Inspired E-commerce Platform",
+    description: "Developed a marketplace app inspired by Rozetka, featuring product browsing, search, and API integration for dynamic data.",
+    image: projectImg1,
     link: "#",
-    technologies: ["React", "Tailwind CSS"],
+    technologies: ["JavaScript", "CSS"],
   },
-  {
-    id: 3,
-    title: "Social Media Dashboard",
-    description: "A responsive dashboard with analytics and user interactions.",
-    image: projectImg3,
-    link: "#",
-    technologies: ["React", "Tailwind CSS"],
-  },
+  // {
+  //   id: 3,
+  //   title: "Social Media Dashboard",
+  //   description: "A responsive dashboard with analytics and user interactions.",
+  //   image: projectImg3,
+  //   link: "#",
+  //   technologies: ["React", "Tailwind CSS"],
+  // },
 ];
 
 const techLogos = {
   React: reactLogo,
   "Tailwind CSS": tailwindLogo,
+  "JavaScript": jsLogo,
+  "CSS": cssLogo,
 };
 
 const Projects = () => {

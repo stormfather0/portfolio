@@ -29,7 +29,7 @@ function App() {
         setContactMenuOpen={setContactMenuOpen}
       />
 
-      <AboutMe />
+<AboutMe setContactMenuOpen={setContactMenuOpen}/>
       <SectionDivider className="my-10" />
       <Skills />
       <SectionDivider

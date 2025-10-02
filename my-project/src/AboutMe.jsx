@@ -3,7 +3,7 @@ import photoProfile from './assets/profile.jpeg';
 import bgCoding from './assets/background-coding.jpg';
 import arrowDown from './assets/arrow-down.svg';
 
-const AboutMe = () => {
+const AboutMe = ({ setContactMenuOpen }) => {
   return (
     <section
     id="about"
@@ -40,6 +40,7 @@ const AboutMe = () => {
             <a
               href="#contact"
               className="bg-white text-black font-semibold px-6 py-2 rounded-2xl shadow-md hover:bg-gray-100 hover:shadow-lg transition-all duration-200"
+              onClick={() => setContactMenuOpen(true)}
             >
               Contact Me
             </a>
