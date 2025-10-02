@@ -41,7 +41,7 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
       {/* Popup */}
       <div
   className="relative rounded-2xl shadow-2xl w-full max-w-3xl
-             p-6 sm:overflow-hidden overflow-auto max-h-[90vh]
+             p-10 sm:overflow-hidden overflow-auto max-h-[90vh]
              bg-gradient-to-br from-indigo-500/30 via-purple-500/20 to-pink-500/30
              backdrop-blur-lg border border-white/20 animate-gradient"
 >
