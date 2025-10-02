@@ -28,9 +28,9 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
   };
 
   const icons = [
-    { src: telegramImg, alt: "Telegram", link: "https://t.me/YourTelegramUsername" },
-    { src: whatsappImg, alt: "WhatsApp", link: "https://wa.me/380999999999" },
-    { src: viberImg, alt: "Viber", link: "viber://chat?number=%2B380999999999" },
+    { src: telegramImg, alt: "Telegram", link: "https://t.me/IvanYatskovyna" },
+    { src: whatsappImg, alt: "WhatsApp", link: "https://wa.me/3807301565055" },
+    { src: viberImg, alt: "Viber", link: "viber://chat?number=%2B3807301565055" },
   ];
 
   return (
@@ -99,7 +99,7 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
           {/* Email */}
           <div className="flex flex-col justify-center items-center bg-blue-50/70 rounded-2xl p-6 shadow-md hover:shadow-lg transition gap-4">
             <button
-              onClick={() => handleClick("mailto:XqIeI@example.com")}
+              onClick={() => handleClick("mailto:ivan.yatskovyna@gmail.com")}
               className="flex items-center justify-center w-20 h-20 rounded-xl mb-4 transition transform hover:scale-105 bg-white/20"
             >
               <img src={emailImg} alt="Email" className="w-12 h-12 object-contain" />
