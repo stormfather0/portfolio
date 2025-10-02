@@ -21,7 +21,7 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="flex gap-6">
           <a
-            href="https://t.me/YourTelegramUsername"
+            href="https://t.me/IvanYatskovyna"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform"
@@ -33,7 +33,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://wa.me/380999999999"
+            href="https://wa.me/380731565055"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-110 transition-transform"
@@ -45,7 +45,7 @@ const Footer = () => {
             />
           </a>
           <a
-            href="viber://chat?number=%2B380999999999"
+            href="viber://chat?number=%2B3809731565055"
             className="hover:scale-110 transition-transform"
           >
             <img
@@ -67,7 +67,7 @@ const Footer = () => {
               href="mailto:test@example.com"
               className="hover:underline text-blue-200"
             >
-              test@example.com
+              ivan.yatskovyna@example.com
             </a>
           </p>
         </div>
