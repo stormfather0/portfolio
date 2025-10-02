@@ -93,7 +93,7 @@ const Skills = () => {
   </div>
 </div>
 
-<div className="bg-white/20 flex justify-center items-center m-0 mt-5 p-2 w-[88%] rounded-md mx-auto   ">
+<div className="bg-white/20 flex justify-center items-center m-0 mt-5 p-2 w-[88%] rounded-md mx-auto hover:scale-105 hover:shadow-xl transition-all duration-300   ">
 
   <p className="text-md px-2 py-1 font-semibold">English - Advanced C1 </p>
 </div>
