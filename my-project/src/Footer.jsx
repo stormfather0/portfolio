@@ -15,7 +15,7 @@ const Footer = () => {
 
         {/* Phone */}
         <p className="text-lg font-bold text-blue-300 drop-shadow-md">
-          +380 99 999 9999
+        +380 73 156 5055
         </p>
 
         {/* Social Icons */}

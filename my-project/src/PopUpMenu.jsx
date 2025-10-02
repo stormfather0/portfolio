@@ -61,7 +61,7 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4  backdrop-blur-lg bg-blue-50/70 rounded-2xl p-4 sm:p-6 mb-6">
           <img src={phoneIcon} alt="Phone" className="w-12 h-12" />
           <div className="flex flex-col items-center sm:items-start text-center sm:text-left">
-            <p className="text-lg font-semibold text-gray-800">+380 99 999 9999</p>
+            <p className="text-lg font-semibold text-gray-800">+380 73 156 5055</p>
             <p className="text-sm text-gray-600">Call me at your earliest convenience</p>
           </div>
         </div>
@@ -83,7 +83,7 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
         </div>
 
         <div className="flex flex-col items-start">
-          <p className="text-gray-800 font-semibold text-lg">+380 99 999 9999</p>
+          <p className="text-gray-800 font-semibold text-lg">+380 73 156 5055</p>
           <p className="text-gray-500 text-sm">Click to chat</p>
         </div>
       </button>
@@ -105,7 +105,7 @@ const PopUpMenu = ({ contactMenuOpen, setContactMenuOpen }) => {
               <img src={emailImg} alt="Email" className="w-12 h-12 object-contain" />
             </button>
             <p className="text-gray-800 font-semibold text-lg">Email</p>
-            <p className="text-gray-600 text-sm break-words">test@example.com</p>
+            <p className="text-gray-600 text-sm break-words">ivan.yatskovyna@gmail.com</p>
             <p
               className="text-sm text-blue-600 font-medium mt-2 cursor-pointer hover:underline"
               onClick={() => handleClick("mailto:XqIeI@example.com")}

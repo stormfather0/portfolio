@@ -20,7 +20,7 @@ const Header = ({ setContactMenuOpen }) => {
 
           {/* Contact button */}
           <button
-            className="ml-4 inline-block bg-white text-black font-semibold px-6 py-2 rounded-2xl shadow-md hover:bg-gray-100 hover:shadow-lg transition-all duration-200"
+            className="ml-4 inline-block bg-white text-black font-semibold px-6 py-2 rounded-2xl shadow-md hover:bg-gray-100 hover:shadow-lg transition-all duration-200 cursor-pointer"
             onClick={() => setContactMenuOpen(true)}
           >
             Contact Me
@@ -63,7 +63,7 @@ const Header = ({ setContactMenuOpen }) => {
           <a href="#letter" className="hover:text-blue-400 transition-colors">Letter</a>
 
           <button
-            className="mt-2 inline-block bg-white text-black font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-gray-100 hover:shadow-lg transition-all duration-200"
+            className="mt-2 inline-block bg-white text-black font-semibold px-6 py-2 rounded-lg shadow-md hover:bg-gray-100 hover:shadow-lg transition-all duration-200 cursor-pointer"
             onClick={() => setContactMenuOpen(true)}
           >
             Contact Me
