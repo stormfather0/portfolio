@@ -52,7 +52,7 @@ html {
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
-  gap: 24px; /
+  gap: 24px; 
   scroll-padding-left: 30px; 
 }
 
@@ -62,10 +62,14 @@ html {
 }
 
 /* Aos animation */
+/* Prevent layout shift when AOS runs */
 [data-aos] {
-  visibility: hidden; 
+  visibility: hidden;
+  overflow: hidden; 
 }
 
 [data-aos].aos-animate {
   visibility: visible;
+  overflow: visible; 
 }
+

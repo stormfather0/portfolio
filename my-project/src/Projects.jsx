@@ -77,7 +77,10 @@ const Projects = () => {
 <div className="absolute top-0 left-0 w-full h-1/3 -z-5 backdrop-blur-2lg bg-black/20" />
 
       {/* Section Header */}
-      <div className="max-w-5xl mx-auto text-center mb-12 px-4 sm:px-8 md:px-12 " data-aos="slide-left">
+      <div
+  className="max-w-5xl mx-auto text-center mb-12 px-4 sm:px-8 md:px-12"
+  data-aos="slide-left"
+>
       <p className="text-white text-5xl text-center mb-10">
       Marketplace Apps with API calls 
       </p>

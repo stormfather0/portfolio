@@ -37,7 +37,7 @@ const AboutMe = ({ setContactMenuOpen }) => {
       </div>
 
         {/* Text content */}
-        <div className="flex-1 text-center md:text-left bg-transparent backdrop-blur-sm rounded-2xl p-8 md:p-10" data-aos="fade-left">
+        <div className="flex-1 text-center md:text-left bg-transparent backdrop-blur-sm rounded-2xl p-8 md:p-10" data-aos="fade-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
           <p className="text-xl font-bold text-gray-300 mb-4 leading-relaxed">
             Hi! I’m <span className="text-2xl text-blue-400 font-semibold">Ivan Yatskovyna</span>, a passionate Frontend Developer. I enjoy creating interactive, responsive, and user-friendly web applications that solve real-world problems.
