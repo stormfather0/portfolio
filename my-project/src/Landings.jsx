@@ -45,9 +45,11 @@ const Landings = () => {
   className="flex flex-col items-center justify-center px-4 md:ml-20 lg:ml-30 mb-10 mt-30 scroll-mt-30"
 >
         
-      <p className="text-white text-5xl text-center mb-10" data-aos="slide-left">
-      Selected landing pages and apps
-      </p>
+<div className="overflow-hidden w-full">
+  <p className="text-white text-5xl text-center mb-10" data-aos="slide-left">
+    Selected landing pages and apps
+  </p>
+</div>
 
       <div
         ref={sliderRef}

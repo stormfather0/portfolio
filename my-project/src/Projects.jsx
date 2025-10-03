@@ -55,6 +55,8 @@ const Projects = () => {
       once: true,     
     });
   }, []);
+
+  
   return (
     <section
   
