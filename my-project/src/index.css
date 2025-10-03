@@ -41,22 +41,31 @@ html {
 
 /* Hide scrollbar */
 .hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge */
+  display: none; /
 }
 
 .hide-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;     
   scroll-behavior: smooth;   
   scroll-snap-type: x mandatory;
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
-  gap: 24px; /* consistent spacing */
-  scroll-padding-left: 30px; /* first card offset */
+  gap: 24px; /
+  scroll-padding-left: 30px; 
 }
 
 .hide-scrollbar li {
   scroll-snap-align: start;
   flex-shrink: 0;
+}
+
+/* Aos animation */
+[data-aos] {
+  visibility: hidden; 
+}
+
+[data-aos].aos-animate {
+  visibility: visible;
 }
