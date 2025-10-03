@@ -1,8 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef,useEffect } from 'react';
+import AOS from 'aos';
+
 import NetflixImg from './assets/netflix.jpg';
 import './index.css';
 
 const Landings = () => {
+  useEffect(() => {
+
+    //animation on scroll
+    AOS.init({
+      duration: 1000, 
+      once: true,     
+    });
+  }, []);
   const colors = ["bg-red-100", "bg-blue-100", "bg-red-100", "bg-blue-100"];
 
   const cards = [
@@ -18,7 +28,6 @@ const Landings = () => {
     if (sliderRef.current) {
       const cardWidth = sliderRef.current.querySelector("li")?.offsetWidth || 300;
       sliderRef.current.scrollBy({ left: -cardWidth - 24, behavior: "smooth" }); 
-      // "- 24" accounts for your gap-6 (1.5rem = 24px)
     }
   };
 
@@ -33,10 +42,10 @@ const Landings = () => {
   
 <div
   id="projects"
-  className="flex flex-col items-center justify-center px-4 md:ml-20 lg:ml-30 mb-10 mt-10 scroll-mt-30"
+  className="flex flex-col items-center justify-center px-4 md:ml-20 lg:ml-30 mb-10 mt-30 scroll-mt-30"
 >
         
-      <p className="text-white text-5xl text-center mb-10">
+      <p className="text-white text-5xl text-center mb-10" data-aos="slide-left">
       Selected landing pages and apps
       </p>
 
@@ -44,7 +53,7 @@ const Landings = () => {
         ref={sliderRef}
         className="w-full overflow-x-auto hide-scrollbar py-4 scroll-smooth"
       >
-        <ul className="flex gap-6 pl-[30px] items-stretch pb-8">
+        <ul className="flex gap-6 pl-[30px] items-stretch pb-8" data-aos="slide-up">
           {cards.map((card) => (
             <a href={card.link} key={card.id}>
               <li

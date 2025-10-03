@@ -1,7 +1,18 @@
-import React from 'react';
+
+import React, { useRef,useEffect } from 'react';
+import AOS from 'aos';
+
 import bgImage from './assets/letter-background.jpg'; 
 
 const Letter = () => {
+
+  //animation on scroll
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: true,    
+    });
+  }, []);
   return (
     <section
       id="letter"
@@ -19,7 +30,7 @@ const Letter = () => {
       <div className="absolute inset-0 -z-5 bg-black/30" />
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto relative z-10">
+      <div className="max-w-4xl mx-auto relative z-10" data-aos="slide-up">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 px-2 leading-snug text-center md:text-left">
           A few more words
         </h2>

@@ -1,9 +1,19 @@
 import React from 'react';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 import photoProfile from './assets/profile.jpeg';
 import bgCoding from './assets/background-coding.jpg';
 import arrowDown from './assets/arrow-down.svg';
 
 const AboutMe = ({ setContactMenuOpen }) => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
+
   return (
     <section
     id="about"
@@ -17,16 +27,17 @@ const AboutMe = ({ setContactMenuOpen }) => {
   
     <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 w-full">
       {/* Profile image */}
-      <div className="w-40 h-40 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden shadow-lg mt-12 md:mt-0">
+      <div className="w-40 h-40 md:w-64 md:h-64 flex-shrink-0 rounded-full overflow-hidden shadow-lg mt-12 md:mt-0" data-aos="fade-up">
         <img
           src={photoProfile}
           alt="Ivan Yatskovyna"
           className="w-full h-full object-cover"
+          ata-aos="fade-up"
         />
       </div>
 
         {/* Text content */}
-        <div className="flex-1 text-center md:text-left bg-transparent backdrop-blur-sm rounded-2xl p-8 md:p-10">
+        <div className="flex-1 text-center md:text-left bg-transparent backdrop-blur-sm rounded-2xl p-8 md:p-10" data-aos="fade-left">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
           <p className="text-xl font-bold text-gray-300 mb-4 leading-relaxed">
             Hi! I’m <span className="text-2xl text-blue-400 font-semibold">Ivan Yatskovyna</span>, a passionate Frontend Developer. I enjoy creating interactive, responsive, and user-friendly web applications that solve real-world problems.

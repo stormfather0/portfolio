@@ -1,5 +1,7 @@
 
-import React from "react";
+import React, { useRef,useEffect } from 'react';
+import AOS from 'aos';
+
 import projectImg1 from "./assets/rozetka-project-2.jpg";
 import projectImg2 from "./assets/project2.jpg";
 import projectImg3 from "./assets/project3.jpg";
@@ -45,10 +47,18 @@ const techLogos = {
 };
 
 const Projects = () => {
+
+  //animation on scroll
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: true,     
+    });
+  }, []);
   return (
     <section
   
-      className="relative flex flex-col w-full text-white  px-4 sm:px-6 md:px-10 lg:px-20 min-h-[1800px] sm:min-h-[calc(100vh+150px)] md:min-h-[calc(100vh+400px)] overflow-hidden"
+      className="relative flex flex-col w-full text-white  px-4 sm:px-6 md:px-10 lg:px-20 mt-30 overflow-hidden pb-15"
     >
       {/* Background */}
 
@@ -65,14 +75,14 @@ const Projects = () => {
 <div className="absolute top-0 left-0 w-full h-1/3 -z-5 backdrop-blur-2lg bg-black/20" />
 
       {/* Section Header */}
-      <div className="max-w-5xl mx-auto text-center mb-12 px-4 sm:px-8 md:px-12 ">
+      <div className="max-w-5xl mx-auto text-center mb-12 px-4 sm:px-8 md:px-12 " data-aos="slide-left">
       <p className="text-white text-5xl text-center mb-10">
       Marketplace Apps with API calls 
       </p>
       </div>
 
       {/* Projects */}
-      <div className="flex flex-col gap-8 max-w-6xl mx-auto">
+      <div className="flex flex-col gap-8 max-w-6xl mx-auto "data-aos="slide-up">
         {projects.map((project) => (
           <a
             key={project.id}
